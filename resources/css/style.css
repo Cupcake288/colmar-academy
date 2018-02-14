@@ -1,15 +1,25 @@
 /* Universal styles */
 .width-60{
   width: 60%;
-  min-height: 100px
 }
 .width-40{
   width: 40%;
-  min-height: 100px;
+}
+.flex-container{
+  display: flex;
+}
+.flex-container .width-40{
+  flex-direction: column;
+}
+.info-container{
+  display: inline-flex;
 }
 
 
-
+/* Debug styles */
 div, header, footer, body, nav{
   border: 1px solid red;
+}
+div{
+  min-height: 100px;
 }
