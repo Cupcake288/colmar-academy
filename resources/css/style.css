@@ -1,0 +1,15 @@
+/* Universal styles */
+.width-60{
+  width: 60%;
+  min-height: 100px
+}
+.width-40{
+  width: 40%;
+  min-height: 100px;
+}
+
+
+
+div, header, footer, body, nav{
+  border: 1px solid red;
+}
