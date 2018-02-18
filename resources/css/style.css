@@ -18,15 +18,30 @@ html{
   flex-direction: column;
   padding: 2rem 1.5rem;
 }
+.flex-container .text-container{
+  flex-direction: column;
+  justify-content: center;
+}
 .grid-structure {
   padding: 0 4.5rem 2rem 4.5rem;
   justify-content: center;
 }
 .info-container{
   display: inline-flex;
+  padding: 1rem;
+}
+.info-container:first-child{
+  padding-top: 0;
 }
 .image-container img{
   max-width: 100%;
+}
+.info-container .image-container{
+  max-width: 35%;
+}
+.info-container .text-container{
+  max-width: 65%;
+  padding-left: 1rem;
 }
 header,
 footer {
@@ -39,10 +54,24 @@ h1{
 h2{
   font-size: 1.5rem;
   margin: 2rem 0;
-  text-align: center;
+}
+h3{
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+p{
+  margin-bottom: 1.5rem;
 }
 strong{
   font-weight: bold;
+}
+text-container a:link,
+text-container a:visited,{
+  color: blue;
+}
+.text-container a{
+  text-decoration: none;
 }
 
 /* Header section */
@@ -83,10 +112,26 @@ header nav li{
   text-align: center;
   display: block;
 }
-a:link,
-a:visited{
+.btn-cta a:link,
+.btn-cta a:visited{
   color: white;
 }
+
+/* Institution section */
+.institution .width-60 p{
+  margin-top: -0.5rem;
+}
+.source{
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.institution span{
+  display: block;
+}
+.institution .width-40 p{
+  margin-bottom: 0.5rem;
+}
+
 
 
 
