@@ -1,31 +1,32 @@
 /* Universal styles */
 /* Containers */
 .width-60{
-  max-width: 60%;
-  padding: 2rem 1.5rem;
+  width: 56%;
+  padding: 2rem 0.5rem 2rem 1.5rem;
 }
 .width-40{
-  max-width: 40%;
+  width: 36%;
+  padding: 2rem 1.5rem;
 }
 .flex-container{
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
 }
 .flex-container .width-40{
   flex-direction: column;
-  padding: 2rem 1.5rem;
 }
 .flex-container .text-container{
   flex-direction: column;
   justify-content: center;
 }
 .grid-structure {
-  padding: 0 4.5rem 2rem 4.5rem;
+  padding: 0 2.5rem 0 4.5rem;
   justify-content: center;
 }
 .info-container{
   display: inline-flex;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .info-container:first-child{
   padding-top: 0;
@@ -68,6 +69,10 @@ h3{
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
+}
+h4{
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 p{
   margin-bottom: 1.5rem;
@@ -133,14 +138,30 @@ header nav li{
 .source{
   font-size: 0.875rem;
   font-style: italic;
-}
-.institution span{
   display: block;
 }
 .institution .width-40 p{
   margin-bottom: 0.5rem;
 }
-
+/* Thesis section */
+.thesis h2{
+  margin-bottom: 0.5rem;
+}
+.thesis p{
+  margin-bottom: 0;
+}
+/* Course section */
+.course{
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: 30%;
+}
+.course .text-container{
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+.courses p{
+  margin-bottom: 0;
+}
 
 
 
