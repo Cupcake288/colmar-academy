@@ -44,6 +44,12 @@
   max-width: 65%;
   padding-left: 1rem;
 }
+/* .banner,
+.institution,
+.courses,
+.thesis .flex-container{
+  justify-content: center;
+} */
 header,
 footer {
   justify-content: space-between;
@@ -146,8 +152,9 @@ header span{
   margin-bottom: 0.5rem;
 }
 /* Thesis section */
-.thesis h2{
-  margin-bottom: 0.5rem;
+.thesis .width-60,
+.thesis .width-40{
+  padding-top: 0;
 }
 .thesis p{
   margin-bottom: 0;
