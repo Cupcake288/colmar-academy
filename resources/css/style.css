@@ -11,23 +11,21 @@
 .flex-container{
   display: flex;
   flex-wrap: wrap;
-}
-.banner,
-.institution,
-.courses,
-.thesis .flex-container{
   justify-content: center;
+}
+header.flex-container,
+footer.flex-container {
+  justify-content: space-between;
+  align-items: center;
 }
 .flex-container .width-40{
   flex-direction: column;
 }
 .flex-container .text-container{
   flex-direction: column;
-  justify-content: center;
 }
 .grid-structure {
   padding: 0 2.5rem 0 4.5rem;
-  justify-content: center;
 }
 .info-container{
   display: inline-flex;
@@ -50,12 +48,6 @@
   max-width: 65%;
   padding-left: 1rem;
 }
-header,
-footer {
-  justify-content: space-between;
-  align-items: center;
-}
-
 /* Fonts and text*/
 html{
   font-size: 16px;
