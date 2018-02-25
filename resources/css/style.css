@@ -1,18 +1,25 @@
 /* Universal styles */
 /* Containers */
+.mobile{
+  display: none;
+}
 .width-60{
   width: 56%;
   padding: 2rem 0.5rem 2rem 1.5rem;
+}
+.width-40{
+  width: 36%;
+  padding: 2rem 1.5rem;
 }
 @media only screen and (max-width: 579px){
   .width-60{
     width: 100%;
     padding: 0;
   }
-}
-.width-40{
-  width: 36%;
-  padding: 2rem 1.5rem;
+  .width-40{
+    width: 100%;
+    padding: 1rem;;
+  }
 }
 .flex-container{
   display: flex;
@@ -34,9 +41,10 @@ footer.flex-container {
   padding: 0 2.5rem 0 4.5rem;
 }
 .info-container{
-  display: inline-flex;
+  display: flex;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 100%
 }
 .info-container:first-child{
   padding-top: 0;
@@ -55,8 +63,24 @@ footer.flex-container {
   padding-left: 1rem;
 }
 @media only screen and (max-width: 579px){
+  .info-container{
+    flex-direction: column;
+  }
+  .flex-container .text-container{
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+  .info-container .image-container{
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 579px){
   .desktop{
     display: none;
+  }
+  .mobile{
+    display: block;
   }
 }
 /* Fonts and text*/
@@ -109,12 +133,8 @@ nav a{
   display: block;
   margin: auto;
 }
-.mobile{
-  display: none;
-}
 @media only screen and (max-width: 579px){
-  .mobile{
-    display: block;
+  header.mobile{
     margin-top: 1rem;
   }
 }
@@ -176,6 +196,11 @@ header span{
 }
 .thesis p{
   margin-bottom: 0;
+}
+@media only screen and (max-width: 579px){
+  .video-container{
+    margin-bottom: 1.5rem;
+  }
 }
 /* Course section */
 .course{
