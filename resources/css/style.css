@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-header.flex-container,
+.flex-container.desktop,  /* desktop version of header */
 footer.flex-container {
   justify-content: space-between;
   align-items: center;
@@ -90,22 +90,42 @@ nav ul {
 }
 nav li{
   padding-left: 1rem;
+  margin: auto;
 }
 nav a{
   color: inherit;
   text-decoration: none;
+  display: block;
+  margin: auto;
 }
-nav.mobile{
+.mobile{
   display: none;
 }
+@media only screen and (max-width: 579px){
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
+
+
+
 
 /* Header section */
 header {
-  max-height: 4rem;
+  height: 4rem;
   padding: 0 1.5rem;
 }
-.company-header{
+header a.flex-container{
   align-items: center;
+}
+header a{
+  text-decoration: none;
+  color: inherit;
 }
 header span{
   text-transform: uppercase;
