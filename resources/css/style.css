@@ -80,11 +80,21 @@ p{
 strong{
   font-weight: bold;
 }
-text-container a:link,
-text-container a:visited,{
-  color: blue;
-}
 .text-container a{
+  color: blue;
+  text-decoration: none;
+}
+
+/* Navigation bars in header and footer */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav li{
+  padding-left: 1rem;
+}
+nav a{
+  color: inherit;
   text-decoration: none;
 }
 
@@ -100,14 +110,6 @@ header span{
   text-transform: uppercase;
   max-height: 2rem;
 }
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-}
-header nav li{
-  padding-left: 1rem;
-}
-
 /* Banner section */
 .banner{
   background-color: lightgrey;
@@ -162,7 +164,10 @@ header nav li{
 .courses p{
   margin-bottom: 0;
 }
-
+/* Footer section */
+footer {
+  padding: 1rem 1.5rem;
+}
 
 
 
