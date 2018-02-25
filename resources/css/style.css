@@ -12,6 +12,12 @@
   display: flex;
   flex-wrap: wrap;
 }
+.banner,
+.institution,
+.courses,
+.thesis .flex-container{
+  justify-content: center;
+}
 .flex-container .width-40{
   flex-direction: column;
 }
@@ -44,12 +50,6 @@
   max-width: 65%;
   padding-left: 1rem;
 }
-/* .banner,
-.institution,
-.courses,
-.thesis .flex-container{
-  justify-content: center;
-} */
 header,
 footer {
   justify-content: space-between;
