@@ -103,6 +103,9 @@ nav a{
   color: inherit;
   text-decoration: none;
 }
+nav.mobile{
+  display: none;
+}
 
 /* Header section */
 header {
