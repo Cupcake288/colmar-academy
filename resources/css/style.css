@@ -4,6 +4,12 @@
   width: 56%;
   padding: 2rem 0.5rem 2rem 1.5rem;
 }
+@media only screen and (max-width: 579px){
+  .width-60{
+    width: 100%;
+    padding: 0;
+  }
+}
 .width-40{
   width: 36%;
   padding: 2rem 1.5rem;
@@ -47,6 +53,11 @@ footer.flex-container {
 .info-container .text-container{
   max-width: 65%;
   padding-left: 1rem;
+}
+@media only screen and (max-width: 579px){
+  .desktop{
+    display: none;
+  }
 }
 /* Fonts and text*/
 html{
@@ -102,19 +113,11 @@ nav a{
   display: none;
 }
 @media only screen and (max-width: 579px){
-  .desktop{
-    display: none;
-  }
   .mobile{
     display: block;
     margin-top: 1rem;
   }
 }
-
-
-
-
-
 /* Header section */
 header {
   height: 4rem;
@@ -185,6 +188,23 @@ header span{
 }
 .courses p{
   margin-bottom: 0;
+}
+@media only screen and (max-width: 579px){
+  .courses .mobile{
+    padding: 0 1rem;
+  }
+  .course{
+    margin-bottom: 0.5rem;
+    width: 100%;
+    background-color: lightgrey;
+  }
+  .courses .text-container{
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  .courses h3{
+    margin: 0;
+  }
 }
 /* Footer section */
 footer {
