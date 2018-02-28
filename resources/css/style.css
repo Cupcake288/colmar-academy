@@ -224,8 +224,8 @@ footer {
     display: block;
   }
   /* Navigation bars */
-  header.mobile{
-    margin-top: 1rem;
+  header .mobile{
+    margin: 0.875rem auto;
   }
   /* Banner section */
   .banner span{
