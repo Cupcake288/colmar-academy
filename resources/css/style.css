@@ -86,7 +86,15 @@ strong{
   color: blue;
   text-decoration: none;
 }
-
+/* Force line break in flex-boxes */
+h1,
+h2,
+h3,
+h4,
+p,
+.text-container a{
+  width: 100%;
+}
 /* Navigation bars in header and footer */
 nav ul {
   display: flex;
