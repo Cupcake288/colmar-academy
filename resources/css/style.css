@@ -194,7 +194,7 @@ footer {
   .info-container{
     flex-direction: column;
   }
-  .flex-container .text-container{
+  .width-40.flex-container .text-container{ /*only apply to text-containers in width-40 info-boxes, not courses */
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 2rem;
