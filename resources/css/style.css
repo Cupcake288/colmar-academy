@@ -1,8 +1,5 @@
 /* Universal styles */
 /* Containers */
-.mobile{
-  display: none;
-}
 .width-60{
   width: 56%;
   padding: 2rem 0.5rem 2rem 1.5rem;
@@ -11,23 +8,13 @@
   width: 36%;
   padding: 2rem 1.5rem;
 }
-@media only screen and (max-width: 579px){
-  .width-60{
-    width: 100%;
-    padding: 0;
-  }
-  .width-40{
-    width: 100%;
-    padding: 1rem;;
-  }
-}
 .flex-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.flex-container.desktop,  /* desktop version of header */
-footer.flex-container {
+header .flex-container.desktop,  /* desktop version of header */
+footer.flex-container {          /* desktop version of footer */
   justify-content: space-between;
   align-items: center;
 }
@@ -62,26 +49,8 @@ footer.flex-container {
   max-width: 65%;
   padding-left: 1rem;
 }
-@media only screen and (max-width: 579px){
-  .info-container{
-    flex-direction: column;
-  }
-  .flex-container .text-container{
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 2rem;
-  }
-  .info-container .image-container{
-    max-width: 100%;
-  }
-}
-@media only screen and (max-width: 579px){
-  .desktop{
-    display: none;
-  }
-  .mobile{
-    display: block;
-  }
+.mobile{
+  display: none;
 }
 /* Fonts and text*/
 html{
@@ -133,11 +102,7 @@ nav a{
   display: block;
   margin: auto;
 }
-@media only screen and (max-width: 579px){
-  header.mobile{
-    margin-top: 1rem;
-  }
-}
+
 /* Header section */
 header {
   height: 4rem;
@@ -197,11 +162,7 @@ header span{
 .thesis p{
   margin-bottom: 0;
 }
-@media only screen and (max-width: 579px){
-  .video-container{
-    margin-bottom: 1.5rem;
-  }
-}
+
 /* Course section */
 .course{
   margin-right: 2rem;
@@ -214,7 +175,48 @@ header span{
 .courses p{
   margin-bottom: 0;
 }
+/* Footer section */
+footer {
+  padding: 1rem 1.5rem;
+}
+
+/* Media query mobile */
 @media only screen and (max-width: 579px){
+  /* Universal styles */
+  .width-60{
+    width: 100%;
+    padding: 0;
+  }
+  .width-40{
+    width: 100%;
+    padding: 1rem;;
+  }
+  .info-container{
+    flex-direction: column;
+  }
+  .flex-container .text-container{
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+  .info-container .image-container{
+    max-width: 100%;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  /* Navigation bars */
+  header.mobile{
+    margin-top: 1rem;
+  }
+  /* Thesis section */
+  .video-container{
+    margin-bottom: 1.5rem;
+  }
+  /* Course section */
   .courses .mobile{
     padding: 0 1rem;
   }
@@ -230,10 +232,6 @@ header span{
   .courses h3{
     margin: 0;
   }
-}
-/* Footer section */
-footer {
-  padding: 1rem 1.5rem;
 }
 
 
