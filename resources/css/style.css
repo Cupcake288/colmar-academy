@@ -210,6 +210,9 @@ footer {
   .info-container .image-container{
     max-width: 100%;
   }
+  .info-container .text-container{
+    max-width: 100%;
+  }
   .desktop{
     display: none;
   }
