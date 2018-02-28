@@ -134,7 +134,7 @@ header span{
 }
 .banner span{
   display: block;
-  margin: 32px 0;
+  margin: 2rem 0;
 }
 .btn-cta{
   background-color: grey;
@@ -197,15 +197,19 @@ footer {
   }
   .width-40{
     width: 100%;
-    padding: 1rem;;
+    padding: 2rem 1rem;
   }
   .info-container{
     flex-direction: column;
   }
-  .width-40.flex-container .text-container{ /*only apply to text-containers in width-40 info-boxes, not courses */
+  .width-40.flex-container .text-container{ /*only applies to text-containers in width-40 info-boxes, not courses */
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .info-container:last-child .text-container:last-child{ /*make margin of last text-container in info-box smaller*/
+    margin-bottom: 0;
   }
   .info-container .image-container{
     max-width: 100%;
@@ -223,13 +227,18 @@ footer {
   header.mobile{
     margin-top: 1rem;
   }
+  /* Banner section */
+  .banner span{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
   /* Thesis section */
   .video-container{
     margin-bottom: 1.5rem;
   }
   /* Course section */
   .courses .mobile{
-    padding: 0 1rem;
+    padding: 0 1rem 1.5rem 1rem;
   }
   .course{
     margin-bottom: 0.5rem;
