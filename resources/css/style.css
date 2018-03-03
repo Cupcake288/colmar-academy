@@ -260,6 +260,33 @@ footer {
   }
 }
 
+/* Media query tablet */
+@media only screen and (min-width: 580px) and (max-width: 1053px) {
+  /* Universal styles */
+  .width-60{
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .width-40{
+    width: 100%;
+  }
+  .grid-structure{
+    padding: 0 1.5rem;;
+  }
+  /* Course section */
+  .course{
+    width: 45%;
+  }
+  .course:nth-child(2n){
+    margin-right: 0;
+  }
+  /* Thesis section */
+  .thesis p{
+    margin-bottom: 2rem;
+  }
+}
+
+
 
 
 
