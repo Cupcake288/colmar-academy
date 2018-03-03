@@ -314,6 +314,10 @@ footer {
   .grid-structure{
     padding: 0 1.5rem;;
   }
+  .info-container:first-child{
+    border-top: 1px solid grey;
+    padding-top: 1rem;
+  }
   /* Banner section */
   .banner-message{
     text-align: center;
