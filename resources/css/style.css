@@ -61,25 +61,35 @@ html{
 }
 h1{
   font-size: 2rem;
+  color: white;
 }
 h2{
   font-size: 1.5rem;
   padding: 2rem 0;
+  color: RGB(2, 7, 14);
 }
 .section-header{
   text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.thesis .section-header{
+  color: RGB(2, 7, 14);
 }
 h3{
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  color: RGB(2, 7, 14);
 }
 h4{
   margin-bottom: 0.5rem;
   text-transform: uppercase;
+  color: RGB(2, 7, 14)
 }
 p{
   margin-bottom: 1.5rem;
+  color: RGB(2, 7, 14)
 }
 strong{
   font-weight: bold;
@@ -87,6 +97,9 @@ strong{
 a{
   text-decoration: none;
   color: inherit;
+}
+.banner-message span{
+  color: white;
 }
 /* Force line break in flex-boxes */
 h1,
@@ -102,29 +115,32 @@ p,
 }
 /* Background and font colors */
 
-header, footer{
+header{
     background-color: white;
   }
-.banner{
-  background-color: lightgrey;
+footer{
+  background-color: RGB(7, 24, 51);
+  color: white;
+}
+.banner,
+.courses{
+  background-color: RGB(7, 24, 51);
 }
 .btn-cta{
-  background-color: grey;
+  background-color: RGB(227, 155, 18);
+  font-weight: bold;
 }
-.institution{
-  background-color: #e8e8e3;
-}
-.courses{
-  background-color: lightgrey;
-}
-.course{
-  background-color: #e8e8e3;
-}
+.institution,
+.course,
 .thesis{
-  background-color: #e8e8e3;
+  background-color: white;
+}
+.course,
+.courses .image-container{
+  border: solid 0.5px white;
 }
 .info-container{
-  border-top: 1px solid grey;
+  border-top: 1px solid #023145;
 }
 .info-container:first-child{
   border-top: none;
@@ -285,8 +301,9 @@ footer {
   .course{
     margin-bottom: 0.5rem;
     width: 100%;
-    background-color: grey;
+    background-color: RGB(197, 202, 210);
     border-radius: 8px;
+    border: none;
   }
   .courses .text-container{
     width: 100%;
@@ -306,7 +323,7 @@ footer {
   /* Universal styles */
   .width-60{
     width: 100%;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
   }
   .width-40{
     width: 100%;
