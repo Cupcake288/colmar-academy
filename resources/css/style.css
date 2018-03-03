@@ -88,17 +88,17 @@ a{
   text-decoration: none;
   color: inherit;
 }
-.text-container a{
-  color: blue;
-}
 /* Force line break in flex-boxes */
 h1,
 h2,
 h3,
 h4,
 p,
-.text-container a{
+.visible-link{
   width: 100%;
+}
+.visible-link{
+  color: blue;
 }
 /* Background and font colors */
 
@@ -194,9 +194,11 @@ header span{
 .thesis .width-40{
   padding-top: 0;
 }
+.institution .flex-container,
 .thesis .flex-container{
   justify-content: flex-start;
 }
+.institution .flex-container .text-container,
 .thesis .flex-container .text-container{
   justify-content: center;
 }
