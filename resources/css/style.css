@@ -18,7 +18,7 @@ header .flex-container.desktop,  /* desktop version of header */
 footer.flex-container {          /* desktop version of footer */
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  padding-top: 1rem;
 }
 .flex-container .width-40{
   flex-direction: column;
@@ -64,7 +64,7 @@ h1{
 }
 h2{
   font-size: 1.5rem;
-  margin: 2rem 0;
+  padding: 2rem 0;
 }
 .section-header{
   text-align: center;
@@ -96,6 +96,35 @@ h4,
 p,
 .text-container a{
   width: 100%;
+}
+/* Background and font colors */
+
+header, footer{
+    background-color: white;
+  }
+.banner{
+  background-color: lightgrey;
+}
+.btn-cta{
+  background-color: grey;
+}
+.institution{
+  background-color: #e8e8e3;
+}
+.courses{
+  background-color: lightgrey;
+}
+.course{
+  background-color: #e8e8e3;
+}
+.thesis{
+  background-color: #e8e8e3;
+}
+.info-container{
+  border-top: 1px solid grey;
+}
+.info-container:first-child{
+  border-top: none;
 }
 /* Navigation bars in header and footer */
 nav ul {
@@ -131,7 +160,6 @@ header span{
 }
 /* Banner section */
 .banner{
-  background-color: lightgrey;
   align-items: center;
 }
 .banner span{
@@ -139,7 +167,7 @@ header span{
   margin: 2rem 0;
 }
 .btn-cta{
-  background-color: grey;
+  max-width: 400px;
 }
 .btn-cta a{
   text-decoration: none;
@@ -168,6 +196,12 @@ header span{
 .thesis .width-60,
 .thesis .width-40{
   padding-top: 0;
+}
+.thesis .flex-container{
+  justify-content: flex-start;
+}
+.thesis .flex-container .text-container{
+  justify-content: center;
 }
 .thesis p{
   margin-bottom: 0;
@@ -226,13 +260,20 @@ footer {
     display: block;
   }
   /* Navigation bars */
-  header .mobile{
-    margin: 0.875rem auto;
+  header .mobile nav{
+    padding-top: 1rem;
   }
   /* Banner section */
   .banner span{
     margin-top: 2rem;
     margin-bottom: 1.5rem;
+  }
+  .banner-message{
+    text-align: center;
+  }
+  .btn-cta{
+    max-width: 50%;
+    margin: auto;
   }
   /* Thesis section */
   .video-container{
@@ -245,7 +286,7 @@ footer {
   .course{
     margin-bottom: 0.5rem;
     width: 100%;
-    background-color: lightgrey;
+    background-color: grey;
   }
   .courses .text-container{
     width: 100%;
@@ -273,6 +314,13 @@ footer {
   .grid-structure{
     padding: 0 1.5rem;;
   }
+  /* Banner section */
+  .banner-message{
+    text-align: center;
+  }
+  .btn-cta{
+    margin: auto;
+  }
   /* Course section */
   .course{
     width: 45%;
@@ -292,9 +340,9 @@ footer {
 
 
 /* Debug styles */
-div, header, footer, body, nav{
+/* div, header, footer, body, nav{
   border: 1px solid red;
-}
+} */
 /* div{
   min-height: 50px;
 } */
