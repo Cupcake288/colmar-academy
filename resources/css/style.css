@@ -57,39 +57,49 @@ footer.flex-container {          /* desktop version of footer */
 /* Fonts and text*/
 html{
   font-size: 16px;
-  font-family: Helvetica;
+  font-family: 'Open Sans', sans-serif;
 }
 h1{
   font-size: 2rem;
   color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 h2{
   font-size: 1.5rem;
+  font-weight: 600;
   padding: 2rem 0;
-  color: RGB(2, 7, 14);
+  color: #02070e;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
 .section-header{
+  font-family: 'Raleway', sans-serif;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   color: white;
+
 }
 .thesis .section-header{
-  color: RGB(2, 7, 14);
+  color: #02070e;
 }
 h3{
+  font-family: 'Raleway', sans-serif;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-  font-weight: bold;
-  color: RGB(2, 7, 14);
+  font-weight: 600;
+  color: #02070e;
 }
 h4{
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  color: RGB(2, 7, 14)
+  color: #02070e
 }
 p{
   margin-bottom: 1.5rem;
-  color: RGB(2, 7, 14)
+  color: #02070e;
+  font-weight: 300;
+  line-height: 1.5rem;
 }
 strong{
   font-weight: bold;
@@ -100,6 +110,7 @@ a{
 }
 .banner-message span{
   color: white;
+  font-weight: 600;
 }
 /* Force line break in flex-boxes */
 h1,
@@ -111,7 +122,8 @@ p,
   width: 100%;
 }
 .visible-link{
-  color: blue;
+  color: #9B5F35;
+  text-decoration: underline;
 }
 /* Background and font colors */
 
@@ -119,16 +131,17 @@ header{
     background-color: white;
   }
 footer{
-  background-color: RGB(7, 24, 51);
+  background-color: #071833;
   color: white;
 }
 .banner,
 .courses{
-  background-color: RGB(7, 24, 51);
+  background-color: #071833;
 }
 .btn-cta{
-  background-color: RGB(227, 155, 18);
+  background-color: #E39B12;
   font-weight: bold;
+  text-shadow: 1px 1px black;
 }
 .institution,
 .course,
@@ -140,7 +153,7 @@ footer{
   border: solid 0.5px white;
 }
 .info-container{
-  border-top: 1px solid #023145;
+  border-top: 1px solid grey;
 }
 .info-container:first-child{
   border-top: none;
@@ -301,7 +314,7 @@ footer {
   .course{
     margin-bottom: 0.5rem;
     width: 100%;
-    background-color: RGB(197, 202, 210);
+    background-color: #c5cad2;
     border-radius: 8px;
     border: none;
   }
