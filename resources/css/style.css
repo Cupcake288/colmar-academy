@@ -2,36 +2,60 @@
 /* Containers */
 .width-60{
   width: 56%;
+  padding: 36px 9px 36px 27px;
   padding: 2rem 0.5rem 2rem 1.5rem;
 }
 .width-40{
   width: 36%;
+  padding: 36px 27px;
   padding: 2rem 1.5rem;
 }
 .flex-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .flex-container.desktop,  /* desktop version of header */
 footer.flex-container {          /* desktop version of footer */
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  padding-top: 18px;
   padding-top: 1rem;
 }
 .flex-container .width-40{
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .flex-container .text-container{
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .grid-structure {
+  padding: 0 45px 0 81px;
   padding: 0 2.5rem 0 4.5rem;
 }
 .info-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  padding-top: 18px;
   padding-top: 1rem;
+  padding-bottom: 18px;
   padding-bottom: 1rem;
   width: 100%
 }
@@ -49,6 +73,7 @@ footer.flex-container {          /* desktop version of footer */
 }
 .info-container .text-container{
   max-width: 65%;
+  padding-left: 18px;
   padding-left: 1rem;
 }
 .mobile,
@@ -61,14 +86,17 @@ html{
   font-family: 'Open Sans', sans-serif;
 }
 h1{
+  font-size: 36px;
   font-size: 2rem;
   color: white;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
 h2{
+  font-size: 27px;
   font-size: 1.5rem;
   font-weight: 600;
+  padding: 36px 0;
   padding: 2rem 0;
   color: #02070e;
   font-family: 'Raleway', sans-serif;
@@ -86,20 +114,25 @@ h2{
 }
 h3{
   font-family: 'Raleway', sans-serif;
+  font-size: 22.5px;
   font-size: 1.25rem;
+  margin-bottom: 9px;
   margin-bottom: 0.5rem;
   font-weight: 600;
   color: #02070e;
 }
 h4{
+  margin-bottom: 9px;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   color: #02070e
 }
 p{
+  margin-bottom: 27px;
   margin-bottom: 1.5rem;
   color: #02070e;
   font-weight: 300;
+  line-height: 27px;
   line-height: 1.5rem;
 }
 strong{
@@ -161,10 +194,15 @@ footer{
 }
 /* Navigation bars in header and footer */
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 nav li{
+  padding-left: 18px;
   padding-left: 1rem;
   margin: auto;
 }
@@ -175,22 +213,32 @@ nav a{
 
 /* Header section */
 header {
+  height: 72px;
   height: 4rem;
+  padding: 0 27px;
   padding: 0 1.5rem;
 }
 header a.flex-container{
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
 }
 header span{
   text-transform: uppercase;
+  max-height: 36px;
   max-height: 2rem;
 }
 /* Banner section */
 .banner{
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
 }
 .banner span{
   display: block;
+  margin: 36px 0;
   margin: 2rem 0;
 }
 .btn-cta{
@@ -198,6 +246,7 @@ header span{
   border-radius: 8px;
 }
 .btn-cta a{
+  padding: 9px 0;
   padding: 0.5rem 0;
   text-align: center;
   display: block;
@@ -209,14 +258,17 @@ header span{
 
 /* Institution section */
 .institution .width-60 p{
+  margin-top: -9px;
   margin-top: -0.5rem;
 }
 citation{
+  font-size: 15.75px;
   font-size: 0.875rem;
   font-style: italic;
   display: block;
 }
 .institution .width-40 p{
+  margin-bottom: 9px;
   margin-bottom: 0.5rem;
 }
 /* Thesis section */
@@ -226,11 +278,15 @@ citation{
 }
 .institution .flex-container,
 .thesis .flex-container{
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .institution .flex-container .text-container,
 .thesis .flex-container .text-container{
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .thesis p{
   margin-bottom: 0;
@@ -238,11 +294,14 @@ citation{
 
 /* Course section */
 .course{
+  margin-right: 36px;
   margin-right: 2rem;
+  margin-bottom: 36px;
   margin-bottom: 2rem;
   width: 30%;
 }
 .course .text-container{
+  padding: 18px 18px 27px 18px;
   padding: 1rem 1rem 1.5rem 1rem;
 }
 .courses p{
@@ -250,6 +309,7 @@ citation{
 }
 /* Footer section */
 footer {
+  padding: 18px 27px;
   padding: 1rem 1.5rem;
 }
 
@@ -265,11 +325,19 @@ footer {
     padding: 2rem 1rem;
   }
   .info-container{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .width-40.flex-container .text-container{ /*only applies to text-containers in width-40 info-boxes, not courses */
-    flex-direction: row;
-    justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -351,6 +419,8 @@ footer {
   }
   /* Header section */
   header .desktop{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   /* Banner section */
