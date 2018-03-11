@@ -28,40 +28,40 @@
   <body>
     <!-- Header section -->
     <header id="header">
-      <div class="desktop flex-container">
+      <div class="desktop flex-container" role="presentation">
         <a href="#" class="flex-container">
           <img src="resources/images/ic-logo.svg" alt="company logo">
           <span><strong>Colmar</strong>Academy</span>
         </a>
-        <nav class="desktop">
-          <ul>
-            <li><a href="#">On campus</a></li>
-            <li><a href="#">Online</a></li>
-            <li><a href="#">For companies</a></li>
-            <li><a href="#">Sign in</a></li>
+        <nav class="desktop" role="menubar">
+          <ul role="presentation">
+            <li><a href="#" role="menuitem">On campus</a></li>
+            <li><a href="#" role="menuitem">Online</a></li>
+            <li><a href="#" role="menuitem">For companies</a></li>
+            <li><a href="#" role="menuitem">Sign in</a></li>
           </ul>
         </nav>
       </div>
-      <div class="mobile">
-        <nav>
-          <ul>
+      <div class="mobile" role="presentation">
+        <nav role="menubar">
+          <ul role="presentation">
             <li>
-              <a href="#">
+              <a href="#" role="menuitem">
                 <img src="resources/images/ic-logo.svg" alt="company logo">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" role="menuitem">
                 <img src="resources/images/ic-on-campus.svg" alt="icon campus information">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" role="menuitem">
                 <img src="resources/images/ic-online.svg" alt="icon online learning">
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" role="menuitem">
                 <img src="resources/images/ic-login.svg" alt="icon sign in">
               </a>
             </li>
@@ -71,17 +71,17 @@
     </header>
 
     <!-- Banner section -->
-    <div class="flex-container banner" id="banner">
-      <div class="width-60 image-container">
+    <div class="flex-container banner" id="banner" role="banner">
+      <div class="width-60 image-container" role="presentation">
         <img src="resources/images/banner.jpg" class="desktop" alt="students studying at table">
         <img src="resources/images/banner.jpg" class="mobile" alt="students studying at table">
         <img src="resources/images/banner-tablet.jpg" class="tablet" alt="students studying at table">
       </div>
-      <div class="width-40 flex-container">
-        <div class="banner-message">
+      <div class="width-40 flex-container" role="presentation">
+        <div class="banner-message" role="presentation">
           <h1>Learn something new everyday</h1>
           <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-          <div class="btn-cta">
+          <div class="btn-cta" role="button">
             <a href="#">Start here</a>
           </div>
         </div>
@@ -90,45 +90,45 @@
 
     <!-- Institution section -->
     <div class="flex-container institution" id="institution">
-      <div class="width-60 desktop">
-        <div class="image-container">
+      <div class="width-60 desktop" role="presentation">
+        <div class="image-container" role="presentation">
           <img src="resources/images/information-main.jpg" alt="person studying">
         </div>
-        <div class="text-container">
+        <div class="text-container" role="presentation">
           <h2>It doesn't hurt to keep practicing</h2>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate, mauris interdum faucibus convallis, magna purus vestibulum est, pretium consectetur enim orci ac mi. Donec at posuere ante. Proin et diam nec nunc tempor fermentum. Nulla auctor ipsum turpis, vel tincidunt urna hendrerit vitae."</p>
           <span class="source">Emanuel, Sr Strategist at Hiring.com</span>
         </div>
       </div>
-      <div class="width-40 flex-container">
-        <div class="info-container">
-          <div class="image-container">
+      <div class="width-40 flex-container" role="presentation">
+        <div class="info-container" role="presentation">
+          <div class="image-container" role="presentation">
                 <img class="desktop" src="resources/images/information-orientation.jpg" alt="students walking on pathway">
                 <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="students walking on pathway">
               </div>
-          <div class="text-container flex-container">
+          <div class="text-container flex-container" role="presentation">
             <h3>Orientation date</h3>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
             <a class="visible-link" href="#">Read more</a>
           </div>
         </div>
-        <div class="info-container">
-          <div class="image-container">
+        <div class="info-container" role="presentation">
+          <div class="image-container" role="presentation">
             <img class="desktop" src="resources/images/information-campus.jpg" alt="study room">
             <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="study room">
           </div>
-          <div class="text-container flex-container">
+          <div class="text-container flex-container" role="presentation">
             <h3>Our campus</h3>
             <p>Find which campus is close by you</p>
             <a class="visible-link" href="#">Read more</a>
           </div>
         </div>
-        <div class="info-container">
-          <div class="image-container">
+        <div class="info-container" role="presentation">
+          <div class="image-container" role="presentation">
             <img class="desktop" src="resources/images/information-guest-lecture.jpg" alt="guest lecturer Oliver Sack">
             <img class="mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="guest lecturer Oliver Sack">
           </div>
-          <div class="text-container flex-container">
+          <div class="text-container flex-container" role="presentation">
             <h3>Our guest lecture</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
             <a class="visible-link" href="#">Read more</a>
@@ -138,75 +138,75 @@
     </div>
 
     <!-- Courses section -->
-    <div class="courses" id="courses">
-      <h2 class="section-header">Start Learning</h2>
-      <div class="flex-container grid-structure desktop">
-        <div class="course">
+    <div class="courses" id="courses" role="presentation">
+      <h2 class="section-header" role="heading">Start Learning</h2>
+      <div class="flex-container grid-structure desktop" role="presentation">
+        <div class="course" role="presentation">
           <a href="#">
-            <div class="image-container">
+            <div class="image-container" role="presentation">
               <img src="resources/images/course-software.jpg" alt="two displays">
             </div>
-            <div class="text-container">
+            <div class="text-container" role="presentation">
             <h3>Software Engineering</h3>
             <h4>Courses</h4>
             <p>Web Development, Mobile Developement, IoT, APIs</p>
           </div>
           </a>
         </div>
-        <div class="course">
+        <div class="course" role="presentation">
           <a href="#">
-            <div class="image-container">
+            <div class="image-container" role="presentation">
               <img src="resources/images/course-computer-art.jpg" alt="user with smart phone">
             </div>
-            <div class="text-container">
+            <div class="text-container" role="presentation">
             <h3>Computer Art</h3>
             <h4>Courses</h4>
             <p>Imaging & Design, Web Design, Motions Graphics & Visual Effects, Computer Animation</p>
           </div>
-        </a>
+          </a>
         </div>
-        <div class="course">
+        <div class="course" role="presentation">
           <a href="#">
-            <div class="image-container">
+            <div class="image-container" role="presentation">
               <img src="resources/images/course-design.jpg" alt="photographing">
             </div>
-            <div class="text-container">
+            <div class="text-container" role="presentation">
             <h3>Design</h3>
             <h4>Courses</h4>
             <p>User Experience Design, User Research, Visual Design</p>
           </div>
           </a>
         </div>
-        <div class="course">
+        <div class="course" role="presentation">
           <a href="#">
-            <div class="image-container">
+            <div class="image-container" role="presentation">
               <img src="resources/images/course-data.jpg" alt="display with data">
             </div>
-            <div class="text-container">
+            <div class="text-container" role="presentation">
               <h3>Data</h3>
               <h4>Courses</h4>
               <p>Data Science, Big Data, SQL, Data Visualization</p>
             </div>
           </a>
         </div>
-        <div class="course">
+        <div class="course" role="presentation">
           <a href="#">
-            <div class="image-container">
+            <div class="image-container" role="presentation">
               <img src="resources/images/course-business.jpg" alt="chess pieces">
             </div>
-            <div class="text-container">
+            <div class="text-container" role="presentation">
             <h3>Business</h3>
             <h4>Courses</h4>
             <p>Product Development, Business Development, Startup</p>
           </div>
           </a>
         </div>
-        <div class="course">
+        <div class="course" role="presentation">
           <a href="#">
-            <div class="image-container">
+            <div class="image-container" role="presentation">
               <img src="resources/images/course-marketing.jpg" alt="user with smart watch">
             </div>
-            <div class="text-container">
+            <div class="text-container" role="presentation">
             <h3>Marketing</h3>
             <h4>Courses</h4>
             <p>Analytics, Content Marketing, Mobile Marketing</p>
@@ -214,45 +214,45 @@
           </a>
         </div>
       </div>
-      <div class="flex-container mobile">
-        <div class="course">
+      <div class="flex-container mobile" role="presentation">
+        <div class="course" role="presentation">
           <a href="#">
-              <div class="text-container">
+              <div class="text-container" role="presentation">
                 <h3>Software Engineering</h3>
               </div>
           </a>
         </div>
-        <div class="course">
+        <div class="course" role="presentation">
           <a href="#">
-            <div class="text-container">
+            <div class="text-container" role="presentation">
               <h3>Computer Art</h3>
             </div>
           </a>
         </div>
-        <div class="course">
+        <div class="course" role="presentation">
           <a href="#">
-            <div class="text-container">
+            <div class="text-container" role="presentation">
               <h3>Design</h3>
             </div>
           </a>
         </div>
-        <div class="course">
+        <div class="course" role="presentation">
           <a href="#">
-            <div class="text-container">
+            <div class="text-container" role="presentation">
               <h3>Data</h3>
             </div>
           </a>
         </div>
-        <div class="course">
+        <div class="course" role="presentation">
           <a href="#">
-            <div class="text-container">
+            <div class="text-container" role="presentation">
               <h3>Business</h3>
             </div>
           </a>
         </div>
-        <div class="course">
+        <div class="course" role="presentation">
           <a href="#">
-            <div class="text-container">
+            <div class="text-container" role="presentation">
             <h3>Marketing</h3>
           </div>
           </a>
@@ -261,36 +261,36 @@
     </div>
 
     <!-- Thesis section -->
-    <div class="thesis" id="thesis">
-      <h2 class="section-header">Thesis exhibits</h2>
-      <div class="flex-container">
-        <div class="width-60">
-          <div class="video-container">
+    <div class="thesis" id="thesis" role="presentation">
+      <h2 class="section-header" role="heading">Thesis exhibits</h2>
+      <div class="flex-container" role="presentation">
+        <div class="width-60" role="presentation">
+          <div class="video-container" role="presentation">
             <video controls>
               <source src="resources/videos/thesis.mp4" type="video/mp4">
               Your browser does not support the video
             </video>
           </div>
-          <div class="text-container desktop">
+          <div class="text-container desktop" role="presentation">
             <h2>Reimagine urban</h2>
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate, mauris interdum faucibus convallis, magna purus vestibulum est, pretium consectetur enim orci ac mi. Donec at posuere ante. Proin et diam nec nunc tempor fermentum. Nulla auctor ipsum turpis, vel tincidunt urna hendrerit vitae."</p>
           </div>
         </div>
-        <div class="width-40 flex-container desktop">
-          <div class="info-container">
-            <div class="image-container">
+        <div class="width-40 flex-container desktop" role="presentation">
+          <div class="info-container" role="presentation">
+            <div class="image-container" role="presentation">
                 <img src="resources/images/thesis-fisma.jpg" alt="drawing of paper prototype">
               </div>
-            <div class="text-container flex-container">
+            <div class="text-container flex-container" role="presentation">
               <h3>Fisma: Design and Prototype</h3>
               <p>Designer showcase of new prototype product</p>
             </div>
           </div>
-          <div class="info-container">
-            <div class="image-container">
+          <div class="info-container" role="presentation">
+            <div class="image-container" role="presentation">
                 <img src="resources/images/thesis-now-and-then.jpg" alt="empire state building">
               </div>
-            <div class="text-container flex-container">
+            <div class="text-container flex-container" role="presentation">
               <h3>Now and then</h3>
               <p>Research study about New York</p>
             </div>
@@ -302,8 +302,8 @@
     <!-- Footer section -->
     <footer class="flex-container" id="footer">
       <div>&copy 2016 Colmar Academy. All rights reserved</div>
-      <nav class="desktop">
-        <ul>
+      <nav class="desktop" role="navigation">
+        <ul role="presentation">
           <li><a href="#">Terms</a></li>
           <li><a href="#">Privacy</a></li>
         </ul>
